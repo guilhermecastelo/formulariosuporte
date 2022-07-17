@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Suporte | Minha Empresa</title>
+</head>
+
+<body>
+
+    <section>
+        <h1>Obtenha Suporte</h1>
+        <h4>
+            Precisa de ajuda com algum dos nossos sistemas? Entre em contato através
+            do formulário abaixo. Nossa equipe de especialistas está pronta para ajudar você!
+        </h4>
+
+        <form action="">
+
+            <div class="linha1">
+                <div class="campo-animado">
+                    <input type="input" id="txtNome" maxlength="50" title="Informe o seu nome completo" autocomplete="off" required>
+                    <label>Nome</label>
+                    <span id="spnNome"></span>
+                </div>
+
+                <div class="campo-animado">
+                    <input type="text" id="txtTelefone" onkeydown="mascTel()" maxlength="15" title="Informe o seu número de telefone" autocomplete="off" required>
+                    <label>Telefone</label>
+                    <span id="spnTelefone"></span>
+                </div>
+            </div>
+
+            <div class="linha2">
+                <div class="campo-animado">
+                    <input type="text" id="txtEmail" maxlength="70" title="Informe o seu e-mail" autocomplete="off" required>
+                    <label>E-mail</label>
+                    <span id="spnEmail"></span>
+                </div>
+
+                <div class="slc-sistema">
+                    <label>Para qual sistema deseja suporte?</label>
+                    <select id="slcSistema" title="Selecione para qual sistema deseja suporte">
+                        <option value="Selecione uma opção" selected disabled>Selecione uma opção</option>
+                        <option value="sysEBD">sysEBD - Sistema de Chamada Escolar</option>
+                        <option value="ClickLink">ClickLink - Site Agrupador de URL's</option>
+                        <option value="PowerTech">PowerTech - E-commerce para Loja de Informática</option>
+                        <option value="SushiTech">SushiTech - Site para Restaurante de Comida Japonesa</option>
+                        <option value="BiblioEtec">BiblioEtec - Sistema de Biblioteca para Escolas Técnicas Estaduais (Etec's)
+                        </option>
+                    </select>
+                    <span id="spnSistema"></span>
+                </div>
+
+                <div class="campo-animado">
+                    <textarea id="txtDescricao" maxlength="150" title="Descreva o motivo do suporte" required></textarea>
+                    <label>Descreva o motivo do suporte</label>
+                    <span id="spnDescricao"></span>
+                </div>
+            </div>
+
+            <input type="reset" value="Limpar formulário">
+            <input type="submit" value="Enviar" onclick="validaForm()">
+
+        </form>
+    </section>  
+
+</body>
+
+<script src="js/valida_form.js"></script>
+<script src="js/masc_tel.js"></script>
+</html>

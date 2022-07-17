@@ -1,0 +1,10 @@
+Itens para pesquisar:
+
+- position: relative, absolute, etc.
+- display: inline-block, etc;
+- pointer-events: none;
+- box-sizing: border-box;
+- input:focus{}
+- input:valid{}
+- sinal de +;
+- Diferença entre . e #;

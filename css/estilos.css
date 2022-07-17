@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+/* Configs. gerais da pág  */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    width: 645px;
+}
+
+/* Título (h1) e subtítulo (h4) da pág */
+
+h1{
+    width: 620px;
+    margin: 10px 10px;
+    padding: 20px 0 15px 0;
+    font-size: 35px;
+    font-weight: 700;
+    color: #0739ff;
+}
+
+h4{
+    width: 620px;
+    padding-bottom: 40px;
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+/* --- Formulário ---  */
+
+.campo-animado input, select, textarea{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.campo-animado label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    transition: all .5s ease;
+    font-size: 15px;
+    pointer-events: none;
+    color: #414141;
+}
+
+.campo-animado, .slc-sistema{
+    position: relative;
+    margin: 10px;
+}
+
+.linha1 .campo-animado, .linha2 .campo-animado{
+    display: inline-block;
+    width: 300px;
+    height: 45px;
+}
+
+.linha2 .campo-animado, .linha2 .slc-sistema, .linha2 .slc-sistema label{
+    width: 624px;
+}
+
+.linha2 .campo-animado input, select{
+    height: 45px;
+}
+
+.linha2 select, .linha2 option{
+    cursor: pointer;
+}
+
+textarea{
+    resize: vertical;
+    min-height: 100px;
+}
+
+input:focus, select:focus, textarea:focus{
+    border: 2px solid #1032b9;
+}
+
+input:focus + label, input:valid + label{
+    top: 0;
+    padding: 5px;
+    background: #fff;
+    font-size: 15px;
+}
+
+textarea:focus + label, textarea:valid + label{
+    font-size: 15px;
+    top: 0;
+    background: #fff;
+    padding: 5px;
+}
+
+.slc-sistema select, .slc-sistema label{
+    font-size: 15px;
+    color: #414141;
+}
+
+span{
+    display: inline-block;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 500;
+    color: #ff0000;
+}
+
+.linha1 span{
+    width: 300px;
+}
+
+.linha2 span{
+    width: 624px;
+}
+
+input[type="submit"]{
+    float: right;
+    margin: 10px;
+    width: 120px;
+    height: 35px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    border: none;
+    border: 2px solid #0739ff;
+    border-radius: 3px;
+    font-weight: 500;
+    background-color: #0739ff;
+    color: #fff;
+}
+
+input[type="submit"]:hover{
+    border: 2px solid #0739ff;
+    background-color: #fff;
+    color: #0739ff;
+}
+
+input[type="reset"]{
+    float: left;
+    margin: 20px 0 0 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    color: #0739ff;
+}
+
+input[type="reset"]:hover{
+    color: #ababab;
+}
+
+/* --- Responsividade --- */
+
+@media(max-width: 670px){
+    section{
+        width: 445px;
+    }
+
+    h1, h4{
+        width: 425px;
+    }
+
+    h1{
+        padding-bottom: 5px;
+    }
+
+    h4{
+        font-size: 12px;
+        padding-bottom: 15px;
+    }
+
+    .linha1 .campo-animado{
+        display: inline-block;
+        width: 425px;
+        height: 40px;
+    }
+    
+    .linha2 .campo-animado, .linha2 .slc-sistema, .linha2 .slc-sistema label{
+        width: 425px;
+    }
+
+    .linha1 span, .linha2 span{
+        width: 425px;
+    }
+}
+
+@media(max-width: 470px){
+    section{
+        width: 350px;
+        
+    }
+
+    h1, h4{
+        width: 335px;
+    }
+
+    h4{
+        font-size: 12px;
+    }
+
+    .linha1 .campo-animado{
+        display: inline-block;
+        width: 335px;
+        height: 40px;
+    }
+    
+    .linha2 .campo-animado, .linha2 .slc-sistema, .linha2 .slc-sistema label{
+        width: 335px;
+    }
+
+    .linha1 span, .linha2 span{
+        width: 335px;
+    }
+}
+
+@media(max-width: 370px){
+    section{
+        width: 290px;
+        
+    }
+    
+    h1, h4{
+        width: 270px;
+    }
+
+    .linha1 .campo-animado{
+        display: inline-block;
+        width: 270px;
+        height: 40px;
+    }
+    
+    .linha2 .campo-animado, .linha2 .slc-sistema, .linha2 .slc-sistema label{
+        width: 270px;
+    }
+
+    .linha1 span, .linha2 span{
+        width: 270px;
+    }
+}
