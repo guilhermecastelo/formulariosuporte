@@ -185,7 +185,6 @@ input[type="reset"]:hover{
     .linha1 .campo-animado{
         display: inline-block;
         width: 425px;
-        height: 40px;
     }
     
     .linha2 .campo-animado, .linha2 .slc-sistema, .linha2 .slc-sistema label{
@@ -200,7 +199,6 @@ input[type="reset"]:hover{
 @media(max-width: 470px){
     section{
         width: 350px;
-        
     }
 
     h1, h4{
@@ -214,7 +212,6 @@ input[type="reset"]:hover{
     .linha1 .campo-animado{
         display: inline-block;
         width: 335px;
-        height: 40px;
     }
     
     .linha2 .campo-animado, .linha2 .slc-sistema, .linha2 .slc-sistema label{
@@ -239,7 +236,6 @@ input[type="reset"]:hover{
     .linha1 .campo-animado{
         display: inline-block;
         width: 270px;
-        height: 40px;
     }
     
     .linha2 .campo-animado, .linha2 .slc-sistema, .linha2 .slc-sistema label{
