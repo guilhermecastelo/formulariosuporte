@@ -18,13 +18,13 @@ body{
 }
 
 section{
-    width: 645px;
+    width: 600px;
 }
 
 /* Título (h1) e subtítulo (h4) da pág */
 
 h1{
-    width: 620px;
+    width: 580px;
     margin: 10px 10px;
     padding: 20px 0 15px 0;
     font-size: 35px;
@@ -33,7 +33,7 @@ h1{
 }
 
 h4{
-    width: 620px;
+    width: 580px;
     padding-bottom: 40px;
     margin-left: 10px;
     font-weight: 400;
@@ -43,7 +43,7 @@ h4{
 
 .campo-animado input, select, textarea{
     width: 100%;
-    height: 100%;
+    height: 45px;
     border: 2px solid #000;
     border-radius: 5px;
     padding: 10px;
@@ -61,19 +61,23 @@ h4{
     color: #414141;
 }
 
-.campo-animado, .slc-sistema{
+.campo-animado{
     position: relative;
     margin: 10px;
 }
 
-.linha1 .campo-animado, .linha2 .campo-animado{
+
+.linha1 .campo-animado{
     display: inline-block;
-    width: 300px;
+    width: 277px;
     height: 45px;
+    position: relative;
 }
 
-.linha2 .campo-animado, .linha2 .slc-sistema, .linha2 .slc-sistema label{
-    width: 624px;
+.linha2 .campo-animado{
+    display: inline-block;
+    width: 580px;
+    height: 45px;
 }
 
 .linha2 .campo-animado input, select{
@@ -82,6 +86,27 @@ h4{
 
 .linha2 select, .linha2 option{
     cursor: pointer;
+}
+
+/* ⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠ ⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠⚠ */
+
+.slc-sistema{ 
+    position: relative;
+    margin: 10px;
+    display: inline-block;
+    width: 580px;
+    height: 70px;
+}
+
+.slc-sistema label{
+    display: block;
+    height: 25px;
+}
+
+.slc-sistema select, .slc-sistema label{
+    width: 580px;
+    font-size: 15px;
+    color: #414141;
 }
 
 textarea{
@@ -107,11 +132,6 @@ textarea:focus + label, textarea:valid + label{
     padding: 5px;
 }
 
-.slc-sistema select, .slc-sistema label{
-    font-size: 15px;
-    color: #414141;
-}
-
 span{
     display: inline-block;
     text-align: right;
@@ -121,11 +141,11 @@ span{
 }
 
 .linha1 span{
-    width: 300px;
+    width: 277px;
 }
 
 .linha2 span{
-    width: 624px;
+    width: 580px;
 }
 
 input[type="submit"]{
@@ -187,7 +207,7 @@ input[type="reset"]:hover{
         width: 425px;
     }
     
-    .linha2 .campo-animado, .linha2 .slc-sistema, .linha2 .slc-sistema label{
+    .linha2 .campo-animado, .linha2 .slc-sistema, .linha2 .slc-sistema select, .linha2 .slc-sistema label{
         width: 425px;
     }
 
@@ -200,49 +220,44 @@ input[type="reset"]:hover{
     section{
         width: 350px;
     }
-
+    
     h1, h4{
-        width: 335px;
-    }
-
-    h4{
-        font-size: 12px;
+        width: 330px;
     }
 
     .linha1 .campo-animado{
         display: inline-block;
-        width: 335px;
+        width: 330px;
     }
     
-    .linha2 .campo-animado, .linha2 .slc-sistema, .linha2 .slc-sistema label{
-        width: 335px;
+    .linha2 .campo-animado, .linha2 .slc-sistema, .linha2 .slc-sistema select, .linha2 .slc-sistema label{
+        width: 330px;
     }
 
     .linha1 span, .linha2 span{
-        width: 335px;
+        width: 330px;
     }
 }
 
 @media(max-width: 370px){
     section{
-        width: 290px;
-        
+        width: 300px;
     }
     
     h1, h4{
-        width: 270px;
+        width: 280px;
     }
 
     .linha1 .campo-animado{
         display: inline-block;
-        width: 270px;
+        width: 280px;
     }
     
-    .linha2 .campo-animado, .linha2 .slc-sistema, .linha2 .slc-sistema label{
-        width: 270px;
+    .linha2 .campo-animado, .linha2 .slc-sistema, .linha2 .slc-sistema select, .linha2 .slc-sistema label{
+        width: 280px;
     }
 
     .linha1 span, .linha2 span{
-        width: 270px;
+        width: 280px;
     }
 }
