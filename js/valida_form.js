@@ -27,7 +27,7 @@ function validaForm() {
     //Telefone
     if (txtTelefone.value == "") {
         erros++;
-        spnTelefone.innerHTML = "Informe um telefone";
+        spnTelefone.innerHTML = "Informe o seu telefone";
     } else {
         spnTelefone.innerHTML = "";
     }
@@ -35,7 +35,7 @@ function validaForm() {
     //E-mail
     if (txtEmail.value == "") {
         erros++;
-        spnEmail.innerHTML = "Informe um e-mail";
+        spnEmail.innerHTML = "Informe o seu e-mail";
     } else if (txtEmail.value.indexOf("@") == -1 || txtEmail.value.indexOf(".") == -1) {
         erros++;
         spnEmail.innerHTML = "Informe um e-mail válido (exemplo@email.com)";
