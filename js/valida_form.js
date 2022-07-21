@@ -1,5 +1,7 @@
 function validaForm() {
 
+    let frmContato = document.querySelector("#frmContato");
+
     let txtNome = document.querySelector("#txtNome");
     let txtTelefone = document.querySelector("#txtTelefone");
     let txtEmail = document.querySelector("#txtEmail");
@@ -53,13 +55,16 @@ function validaForm() {
     if(txtDescricao.value == ""){
         erros++;
         spnDescricao.innerHTML = "Descreva o motivo do suporte";
+    }else{
+        spnDescricao.innerHTML = "";
     }
 
     //Envio do formulário
     if(erros == 0){
-        alert("Dados enviados :)\nNossa equipe retornará o contato em breve.")
+        alert("Dados enviados :)\nNossa equipe retornará o contato em breve.");
+        frmContato.submit();
     }else{
-        alert("Foram identificados " + erros + " erro(s) no formulário :(\nVerifique os dados informados e tente enviar novamente.")
+        alert("Foram identificados " + erros + " erro(s) no formulário :(\nVerifique os dados informados e tente enviar novamente.");
     }
 
 }
