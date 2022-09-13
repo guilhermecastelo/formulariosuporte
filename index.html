@@ -7,10 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/dark.css">
     <title>Suporte | Minha Empresa</title>
 </head>
 
 <body>
+
+    <!-- <header>
+        <button id="darkbutton" class="darkmode" onclick="darkmode()"></button>
+    </header> -->
+
     <section>
         <h1>Obtenha Suporte</h1>
         <h4>
@@ -22,13 +29,15 @@
 
             <div class="linha1">
                 <div class="campo-animado">
-                    <input type="input" id="txtNome" maxlength="50" title="Informe o seu nome completo" autocomplete="off" required>
+                    <input type="input" id="txtNome" maxlength="50" title="Informe o seu nome completo"
+                        autocomplete="off" required>
                     <label>Nome</label>
                     <span id="spnNome"></span>
                 </div>
 
                 <div class="campo-animado">
-                    <input type="text" id="txtTelefone" onkeydown="mascTel()" maxlength="15" title="Informe o seu número de telefone" autocomplete="off" required>
+                    <input type="text" id="txtTelefone" onkeydown="mascTel()" maxlength="15"
+                        title="Informe o seu número de telefone" autocomplete="off" required>
                     <label>Telefone</label>
                     <span id="spnTelefone"></span>
                 </div>
@@ -36,7 +45,8 @@
 
             <div class="linha2">
                 <div class="campo-animado">
-                    <input type="text" id="txtEmail" maxlength="70" title="Informe o seu e-mail" autocomplete="off" required>
+                    <input type="text" id="txtEmail" maxlength="70" title="Informe o seu e-mail" autocomplete="off"
+                        required>
                     <label>E-mail</label>
                     <span id="spnEmail"></span>
                 </div>
@@ -49,26 +59,33 @@
                         <option value="ClickLink">ClickLink - Site Agrupador de URL's</option>
                         <option value="PowerTech">PowerTech - E-commerce para Loja de Informática</option>
                         <option value="SushiTech">SushiTech - Site para Restaurante de Comida Japonesa</option>
-                        <option value="BiblioEtec">BiblioEtec - Sistema de Biblioteca para Escolas Técnicas Estaduais (Etec's)
+                        <option value="BiblioEtec">BiblioEtec - Sistema de Biblioteca para Escolas Técnicas Estaduais
+                            (Etec's)
                         </option>
                     </select>
                     <span id="spnSistema"></span>
                 </div>
 
                 <div class="campo-animado">
-                    <textarea id="txtDescricao" maxlength="150" title="Descreva o motivo do suporte" required></textarea>
+                    <textarea id="txtDescricao" maxlength="500" title="Descreva o motivo do suporte"
+                        oninput="contarCaracteres()" required></textarea>
                     <label>Descreva o motivo do suporte</label>
-                    <span id="spnDescricao"></span>
+                    <div id="spns-descricao">
+                        <span id="spnContDescricao">0/500</span>
+                        <span id="spnDescricao"></span>
+                    </div>
                 </div>
+
             </div>
 
             <input type="reset" value="Limpar formulário">
             <input type="button" value="Enviar" onclick="validaForm()">
 
         </form>
-    </section>  
+    </section>
 </body>
 
-<script src="js/valida_form.js"></script>
-<script src="js/masc_tel.js"></script>
+<script src="js/form.js"></script>
+<script src="js/dark.js"></script>
+
 </html>

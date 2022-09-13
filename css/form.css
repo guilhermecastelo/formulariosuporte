@@ -1,0 +1,203 @@
+.campo-animado input, select, textarea{
+    width: 100%;
+    height: 45px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.campo-animado label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    transition: all .5s ease;
+    font-size: 15px;
+    pointer-events: none;
+    color: #414141;
+}
+
+.campo-animado{
+    position: relative;
+    margin: 10px;
+}
+
+
+.linha1 .campo-animado{
+    display: inline-block;
+    width: 277px;
+    height: 45px;
+    position: relative;
+}
+
+.linha2 .campo-animado{
+    display: inline-block;
+    width: 580px;
+    height: 45px;
+}
+
+.linha2 .campo-animado input, select{
+    height: 45px;
+}
+
+.linha2 select, .linha2 option{
+    cursor: pointer;
+}
+
+.slc-sistema{ 
+    position: relative;
+    margin: 10px;
+    display: inline-block;
+    width: 580px;
+    height: 70px;
+}
+
+.slc-sistema label{
+    display: block;
+    height: 25px;
+}
+
+.slc-sistema select, .slc-sistema label{
+    width: 580px;
+    font-size: 15px;
+    color: #414141;
+}
+
+textarea{
+    resize: vertical;
+    min-height: 100px;
+}
+
+input:focus, select:focus, textarea:focus{
+    border: 2px solid #1032b9;
+}
+
+input:focus + label, input:valid + label{
+    top: 0;
+    padding: 5px;
+    background: #fff;
+    font-size: 15px;
+}
+
+textarea:focus + label, textarea:valid + label{
+    font-size: 15px;
+    top: 0;
+    background: #fff;
+    padding: 5px;
+}
+
+span{
+    display: inline-block;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 500;
+    color: #ff0000;
+}
+
+.linha1 span{
+    width: 277px;
+}
+
+.linha2 span{
+    width: 580px;
+}
+
+span#spnContDescricao{
+    width: 30px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 500;
+    color: #7c7c7c;
+}
+
+span#spnDescricao{
+    width: 165px;
+}
+
+#spns-descricao{
+    width: 580px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="button"]{
+    float: right;
+    margin: 10px;
+    width: 120px;
+    height: 35px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    border: none;
+    border: 2px solid #0739ff;
+    border-radius: 3px;
+    font-weight: 500;
+    background-color: #0739ff;
+    color: #fff;
+}
+
+input[type="button"]:hover{
+    border: 2px solid #0739ff;
+    background-color: #fff;
+    color: #0739ff;
+}
+
+input[type="reset"]{
+    float: left;
+    margin: 20px 0 0 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    color: #0739ff;
+}
+
+input[type="reset"]:hover{
+    color: #ababab;
+}
+
+/* --- RESPONSIVIDADE --- */
+
+@media(max-width: 670px){
+    .linha1 .campo-animado{
+        display: inline-block;
+        width: 425px;
+    }
+    
+    .linha2 .campo-animado, .linha2 .slc-sistema, .linha2 .slc-sistema select, .linha2 .slc-sistema label, #spns-descricao{
+        width: 425px;
+    }
+
+    .linha1 span, .linha2 span{
+        width: 425px;
+    }
+}
+
+@media(max-width: 470px){
+    .linha1 .campo-animado{
+        display: inline-block;
+        width: 330px;
+    }
+    
+    .linha2 .campo-animado, .linha2 .slc-sistema, .linha2 .slc-sistema select, .linha2 .slc-sistema label, #spns-descricao{
+        width: 330px;
+    }
+
+    .linha1 span, .linha2 span{
+        width: 330px;
+    }
+}
+
+@media(max-width: 370px){
+    .linha1 .campo-animado{
+        display: inline-block;
+        width: 280px;
+    }
+    
+    .linha2 .campo-animado, .linha2 .slc-sistema, .linha2 .slc-sistema select, .linha2 .slc-sistema label, #spns-descricao{
+        width: 280px;
+    }
+
+    .linha1 span, .linha2 span{
+        width: 280px;
+    }
+}
