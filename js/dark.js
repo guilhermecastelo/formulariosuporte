@@ -1,6 +1,4 @@
 const body = document.querySelector('body');
-const button = document.querySelector('#darkbutton');
-//let texto = document.querySelector("#texto");
 
 function darkmode() {
 
