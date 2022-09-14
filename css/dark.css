@@ -49,7 +49,7 @@ body.dark input[type="text"], body.dark select, body.dark textarea, body.dark la
     background-color: #2b2c30;
 }
 
-body.dark input[type="text"], body.dark label, body.dark select, body.dark option{
+body.dark input[type="text"], body.dark textarea, body.dark label, body.dark select, body.dark option{
     color: #c0c0c0;
 }
 
